@@ -1,0 +1,91 @@
+<!DOCTYPE html><!--htmlの文章型を宣言-->
+<html>
+<head><!--ページの情報(画面には表示されない)-->
+	<meta content="text/html; charset=UTF-8"><!--文字化け対策-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- おまじない -->
+    <title>SoLo(仮)</title><!-- タイトル -->
+    <style>
+
+    </style>
+</head>
+<body><!-- 内容始 -->
+    <h1>SoLo(仮)</h1><!-- 見出し -->
+    <h2>~一人で楽しむアウトドアサイト~</h2>
+    
+    <p>アウトドアって楽しいよね...</p><!-- 本文 -->
+    <p>最強のWebクリエーターに、<em>Me(おれ)</em>はなる</p><!--<em>=斜体(日本語は不可?)-->
+    <p>最強のWebクリエーターに、<strong>Me(おれ)</strong>はなる</p><!--<strong>=強調-->
+    <p>&lt;&gt;&quot;&amp;&copy;&yen;</p><!--文字参照<,>,",&,,￥-->
+    <p>&lt;br&gt;を使うとね、<br>こんな感じでね、<br>改行がね<br>出来るんだよ</p>
+    <p><ol><li>&lt;li&gt;を使うと</li><li>箇条書きできる</li></ol></p>
+    <h3>用語説明</h3>
+    <dl>
+        <dt>釣り</dt>
+        <dd>魚を釣ること。また、その方法</dd>
+        <dt>キャンプ</dt>
+        <dd>テントを張って野営すること</dd>
+        <dt>バイク</dt>
+        <dd>原動機付き自転車</dd>
+    </dl>
+
+    <h3>運営 Staff</h3>
+    <table border="l">
+        <thead>
+            <tr><th>名前</th>　    <th>役職</th></tr><!--表項目の見出しは<th>-->
+        </thead>
+        <tbody>
+            <tr><td>アンディ</td>　<td>プログラマー</td></tr>
+            <tr><td>たらこ</td>　  <td>デザイナー</td></tr>
+            <tr><td>井川</td>　    <td>ライター</td></tr>
+            <tr><td>ネモ</td>　    <td>マーケティング</td></tr>
+            <tr><td><em>Sora</em></td>　<td>フォトグラファー</td></tr>
+        </tbody>
+    </table>
+    <h2>お問い合わせフォーム</h2>
+    <form action="送信先" method="GET/ post"></form>
+    <!--"get":URLの後ろにデータを付けて送信する方法(例:サイト内検索など)
+    　　"post":HTTPリクエストのボディ部分にデータを付けて送信する方法(個人情報など)-->
+    <dl>
+        <dt>お名前</dt>
+        <dd><input type="text" name="your_name" ></dd>
+        <dt>性別</dt>
+        <dd>
+            <li><input type="radio" name="gender" value="男">男性</li>
+            <li><input type="radio" name="gender" value="女">女性</li>
+        </dd>
+        <dt>メールアドレス</dt>
+        <dd><input type="text" name="your_mail"></dd>
+        <dt>お問い合わせ種別</dt>
+        <dd><select name="type">
+            <option value="内容について">内容について</option>
+            <option value="ライターの募集について">ライターの募集について</option>
+            <option value="その他">その他</option>
+            </select>
+        </dd>
+        <dt>お問い合わせ内容</dt>
+        <dd><textarea name="content" cols="40" rows="8"></textarea></dd>
+        <dt>アンケート</dt>
+        <dt>趣味を教えてください(複数選択可)</dt>
+        <dd>
+            <li><input type="checkbox" name="hobby" value="バイク">バイク</li>
+            <li><input type="checkbox" name="hobby" value="キャンプ">キャンプ</li>
+            <li><input type="checkbox" name="hobby" value="釣り">釣り</li>
+            <li><input type="checkbox" name="hobby" value="その他">その他<input type="text" name="hobby"></li>
+        </dd>
+        <dt><input type="submit" value="送信する"></dt>
+        *実はPHPを実装してないから送信されないんだけどね(笑)
+    </dl>
+
+
+    
+    
+
+    <img src="grom01.jpg" alt="" width="30%" height="30%"><!-- 画像を表示 -->
+    <li><a href="pre1H.html">ホームに戻る</a></li>
+    <li><a href="pre2bc.html">バイク＆キャンプ</a></li><!-- リンクを表示 -->
+    <li><a href="pre3bf.html">バイク＆釣り</a></li>
+    <li><a href="pre4cf.html">釣り＆キャンプ</a></li>
+    <li><a href="pre5bcf.html">バイク＆キャンプ&釣り</a></li>
+    
+</body><!-- 内容終 -->
+</html>
